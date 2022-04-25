@@ -90,6 +90,7 @@ body{
     }
     #details
     {
+        text-align: justify;
         width: 85%;
         margin: auto;
         display: flex;
