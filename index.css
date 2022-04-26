@@ -45,12 +45,14 @@
   }
 
   .title img{
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       
       height: 70px;
   }
   
-  
+  .info-container img{
+    height: 500px;
+  }
   
   .wrapper {
     height: 100vh;
@@ -62,7 +64,7 @@
   .parallax__group {
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     transform-style: preserve-3d;
   }
   
@@ -202,8 +204,11 @@
   }
   
   .social-container i {
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     margin-right: 0.25rem;
+  }
+  .social-container a:hover{
+    color: rgb(253, 217, 98);
   }
   
   .info-container {
