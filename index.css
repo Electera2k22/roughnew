@@ -49,6 +49,20 @@
       
       height: 70px;
   }
+
+  .explore-btn{
+    animation: MoveUpDown 1s linear infinite;   
+    position: absolute;
+  }
+
+  @keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
   
   .info-container img{
     height: 500px;
