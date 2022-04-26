@@ -66,6 +66,7 @@ body{
 
 #credits
 {
+    display: none;
     margin-top: 150px;
     text-align: center;
 }
