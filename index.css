@@ -52,7 +52,7 @@
 
   .explore-btn{
     animation: MoveUpDown 1s linear infinite;   
-    position: absolute;
+    position: relative;
   }
 
   @keyframes MoveUpDown {
