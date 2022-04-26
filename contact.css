@@ -190,6 +190,7 @@ body {
     .contact-wrapper {
       display: flex;
       flex-direction: column;
+      margin: 0 auto 0 auto;
     }
     .direct-contact-container, .form-horizontal {
       margin: 0 auto;
@@ -198,6 +199,7 @@ body {
     .direct-contact-container {
       margin-top: 60px;
       max-width: 300px;
+      transform: translateX(-40px);
     }    
     .social-media-list li {
       height: 60px;
@@ -221,6 +223,9 @@ body {
       
       margin: 0 auto;
     }
+    .contact-wrapper{
+      transform: translateX(19px);
+    }
    
     
     .name, .email, textarea {
@@ -230,6 +235,8 @@ body {
     .direct-contact-container {
       margin-top: 60px;
       max-width: 280px;
+      transform: translateX(-5px);
+      margin-left: 10px;
     }  
     .social-media-list {
       left: 0;
