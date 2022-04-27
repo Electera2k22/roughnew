@@ -17,17 +17,22 @@
         
         <!-- jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <title>ELECT-ERA</title>
         <link rel="shortcut icon" href="images/logo_colored.png" type="image/x-icon">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="indexmodal.css" />
     <link
       href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
@@ -37,7 +42,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <!-- <div class="parallax__group hero-container"> -->
+      <div class="parallax__group hero-container">
         <div class="parallax__layer water"></div>
         <!-- <div class="parallax__layer sky"></div>
         <div class="parallax__layer bushes"></div>
@@ -59,30 +64,64 @@
               <br>
               <a href="about.html" class="explore-btn"><button  class="btn btn-outline-warning btn-lg ">Explore</button></a>
           </div>
-          
-          <div class="social-container">
+
+          <!-- update-icon -->
+
+          <div class="update-modal">
             
-            <a href="https://www.instagram.com/elect_era_2k22/?igshid=YmMyMTA2M2Y=" target="_blank"
-              ><i class="icon ion-logo-instagram"></i
-            ></a>
-            <a href="https://twitter.com/ELECT_ERA_2k22?t=XvJuIw3d0Aysp6DBsomtnA&s=08" target="_blank"
-              ><i class="icon ion-logo-twitter"></i
-            ></a>
-            <a href="https://www.youtube.com/channel/UC8s9MrUOm-LzFU9qvD2gHJA" target="_blank"
-              ><i class="icon ion-logo-youtube"></i
-            ></a>
+            
+              <img src="https://cdn-icons-png.flaticon.com/512/3602/3602228.png" height="35px"  onclick="document.getElementById('update').style.display='block';document.getElementsByTagName('body').style.filter='blur(8px)'"></img>
+              <!-- popup dialogbox -->
+
+             <div id="update" class="popup">
+              <span onclick="document.getElementById('update').style.display='none';document.getElementById('web_content').style.filter='blur(0px)'" class="close" title="Close popup">&times;</span>
+              <div>
+                <div class="popup-content" >
+                  <div class="container">
+                    <h5 style="text-align: center;"><b>Updates</b> </h5>
+                    <hr>
+                    <p>
+                      the regisration for events starts at 30-4-22
+                    </p>
+                    <hr>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
+          
+          
         </div>
-      <!-- </div> -->
-      <!-- <div class="parallax__group info-container">
-        <img src="images/poster/logolaunch.jpeg" alt="" />
+      </div> 
+
+      <div class="parallax__group info-container">
+        <iframe width="500" height="355" src="https://www.youtube.com/embed/i0ZabxXmH4Y" allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen"></iframe>
         <div class="text-container">
-          <h2>This is your year.</h2>
+          <h2>ELECT-ERA 2K22 <br> LOGO LAUNCH</h2>
           <p>What would life be if we had no courage to attempt anything?</p>
           <p>- Vincent Van Gogh</p>
-          <a href="#" class="btn">Get Started Now</a>
         </div>
-      </div> -->
+      </div>
+    </div>
+    <div class="social-container">
+            
+      <a href="https://www.instagram.com/elect_era_2k22/?igshid=YmMyMTA2M2Y=" target="_blank"
+        ><i class="icon ion-logo-instagram"></i
+      ></a>
+      <a href="https://twitter.com/ELECT_ERA_2k22?t=XvJuIw3d0Aysp6DBsomtnA&s=08" target="_blank"
+        ><i class="icon ion-logo-twitter"></i
+      ></a>
+      <a href="https://www.youtube.com/channel/UC8s9MrUOm-LzFU9qvD2gHJA" target="_blank"
+        ><i class="icon ion-logo-youtube"></i
+      ></a>
     </div>
   </body>
+
+  
 </html>
