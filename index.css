@@ -48,7 +48,7 @@
   .title img{
       margin-bottom: 40px;
       
-      height: 70px;
+      height: 80px;
   }
 
   .explore-btn{
@@ -287,6 +287,19 @@
     .text-container p:nth-of-type(1) {
       font-size: 0.86rem;
     }
+  }
+
+  @media (max-width: 450px){
+    .explore-btn{
+      animation: MoveUpDown 1s linear infinite;   
+      position: absolute;
+      margin-left: -50px;
+    }
+    .title img{
+      margin-bottom: 40px;
+      
+      height: 55px;
+  }
   }
   
  
